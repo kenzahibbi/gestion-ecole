@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="373.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="archLog.Controller.AjoutUEController">
+   <center>
+      <AnchorPane prefHeight="370.0" prefWidth="306.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="95.0" prefWidth="310.0" style="-fx-background-color: #ac7494;">
+               <children>
+                  <Label layoutX="64.0" layoutY="32.0" text="UnitÃ© d'enseignement " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="BtnAjoutDB" onMouseClicked="#handleAjout" layoutX="102.0" layoutY="328.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #6c043c;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+			<TextField fx:id="idUE" layoutX="48.0" layoutY="104.0" prefHeight="25.0" prefWidth="216.0" promptText="Code unité d'enseignement" />
+            <TextField fx:id="intitule" layoutX="47.0" layoutY="140.0" prefHeight="25.0" prefWidth="216.0" promptText="Intitulé Unité d'enseignement " />
+            <TextField fx:id="nbHCours" layoutX="47.0" layoutY="209.0" prefHeight="25.0" prefWidth="216.0" promptText="Nb heures cours" />
+            <TextField fx:id="nbHTP" layoutX="47.0" layoutY="248.0" prefHeight="25.0" prefWidth="216.0" promptText="Nb heures TP" />
+            <TextField fx:id="nbHTD" layoutX="47.0" layoutY="283.0" prefHeight="25.0" prefWidth="216.0" promptText="Nb heures TD" />
+            <TextField fx:id="nomEnseignant" layoutX="48.0" layoutY="175.0" prefHeight="25.0" prefWidth="216.0" promptText="nom d'enseignant" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

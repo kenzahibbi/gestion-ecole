@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="373.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="archLog.Controller.AjoutCreneauController">
+   <center>
+      <AnchorPane prefHeight="370.0" prefWidth="306.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="95.0" prefWidth="310.0" style="-fx-background-color: #ac7494;">
+               <children>
+                  <Label layoutX="64.0" layoutY="32.0" text="Créneau" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="BtnAjoutDB" onMouseClicked="#handleAjout" layoutX="102.0" layoutY="328.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #6c043c;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="Date" layoutX="115.0" layoutY="128.0" />
+            <ChoiceBox fx:id="H_debut" layoutX="142.0" layoutY="182.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="H_fin" layoutX="142.0" layoutY="239.0" prefWidth="150.0" />
+            <Label layoutX="15.0" layoutY="124.0" text="Date" textFill="#5b3333">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="178.0" text="Heure début" textFill="#5b3333">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="236.0" text="Heure fin" textFill="#5b3333">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

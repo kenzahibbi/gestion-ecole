@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="373.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="archLog.Controller.AjoutSessionController">
+   <center>
+      <AnchorPane prefHeight="370.0" prefWidth="306.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="95.0" prefWidth="310.0" style="-fx-background-color: #ac7494;">
+               <children>
+                  <Label layoutX="64.0" layoutY="32.0" text="Session" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="BtnAjoutDB" layoutX="102.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#handleAjout" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #6c043c;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="38.0" layoutY="126.0" text="Classe" textFill="#5b3333">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="175.0" text="Unité d'enseignement" textFill="#5b3333">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="222.0" text="Créneau" textFill="#5b3333">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="ListCreneau" layoutX="251.0" layoutY="223.0" prefHeight="25.0" prefWidth="45.0" />
+            <ChoiceBox fx:id="ListClasse" layoutX="252.0" layoutY="127.0" prefHeight="25.0" prefWidth="45.0" />
+            <ChoiceBox fx:id="ListUE" layoutX="251.0" layoutY="176.0" prefHeight="25.0" prefWidth="45.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
